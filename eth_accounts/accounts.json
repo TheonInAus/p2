@@ -1,0 +1,24 @@
+{
+    "_comment": "Addresses of Milk Chain users",
+    "farmer": {
+        "pubKey": "0xdDd09c749D765E996043060f94E754F9e4eBd5a4",
+        "pvtKey": "0x0f078f4e0341af2fe55dadb5202594c008b160836d77142b699ca96c6b8e238b"
+    },
+    "transporter": {
+        "pubKey": "0x84c8aa581e2f92eA539242A2700d0eFf7f412fE1",
+        "pvtKey": "0x7848d1194c82a92aeb0e8046ed921929e6df5eefb3e11cc4777a34770fe9b019"
+    },
+    "inspector": {
+        "pubKey": "0xd6ed99eF47459477c1AC5C85B41F5f42703B0840",
+        "pvtKey": "0x0ab23166c6eaee6af9707ca1b4d734b4d4704deb77a125e0811b8180be3e8ea5"
+    },
+    "retailer": {
+        "pubKey": "0xF187832325B01592AE62A4aB347396f7D92029bE",
+        "pvtKey": "0x1ef2315cf633437018f36d1a6fc45da8462acf7dde845320ccfe982af0d6054d"
+    },
+    "manager": {
+        "pubKey": "0x92fDd35E82124Ac23d1A96D5e00110C632b47006",
+        "pvtKey": "0x9116214966ec28e9616239093ac2b33f411e5af661ac4aebcca39de2f8f7f09d"
+    }
+}
+

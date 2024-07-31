@@ -1,0 +1,104 @@
+ganache v7.9.2 (@ganache/cli: 0.10.2, @ganache/core: 0.10.2)
+Starting RPC server
+
+Available Accounts
+==================
+(0) 0x92fDd35E82124Ac23d1A96D5e00110C632b47006 (1000 ETH)
+(1) 0xdDd09c749D765E996043060f94E754F9e4eBd5a4 (1000 ETH)
+(2) 0x84c8aa581e2f92eA539242A2700d0eFf7f412fE1 (1000 ETH)
+(3) 0xd6ed99eF47459477c1AC5C85B41F5f42703B0840 (1000 ETH)
+(4) 0xF187832325B01592AE62A4aB347396f7D92029bE (1000 ETH)
+(5) 0xC64A866aB3AC300f14d6C90C7d56Fe31e57320af (1000 ETH)
+(6) 0x8DB43bc436Bb89aD13f20C2E80690380659c4FfB (1000 ETH)
+(7) 0xF75007c21c5E0b1813CF2A5a43Ba15f3a38e855C (1000 ETH)
+(8) 0x15cBda21cfBF3E6487B83f5DA90F41E1973C2a63 (1000 ETH)
+(9) 0xdE7318855C6588cdeb8e4067c8E7f6FFBd015745 (1000 ETH)
+
+Private Keys
+==================
+(0) 0x9116214966ec28e9616239093ac2b33f411e5af661ac4aebcca39de2f8f7f09d
+(1) 0x0f078f4e0341af2fe55dadb5202594c008b160836d77142b699ca96c6b8e238b
+(2) 0x7848d1194c82a92aeb0e8046ed921929e6df5eefb3e11cc4777a34770fe9b019
+(3) 0x0ab23166c6eaee6af9707ca1b4d734b4d4704deb77a125e0811b8180be3e8ea5
+(4) 0x1ef2315cf633437018f36d1a6fc45da8462acf7dde845320ccfe982af0d6054d
+(5) 0x208ba0e271a4c2b96de7bd711f06e2975c7f59aee12bb5e71e4b8cb7b92a4593
+(6) 0xe6e33ca8e285cbf7927daa31879d64d860f868b0b39e677686874f27529981f1
+(7) 0x491e1b6a92c7a7314066b4427542b2688de58624c7b62b0dfb92efdb123185c4
+(8) 0x14a80aafba27973a63707af1e6c02bb2304bc6d36c9c3d26bd1d1274508d65c3
+(9) 0xd799e7786f7e7a5857a4405d353174e9e178ad1e2db36e1394cfb8a57173d207
+
+HD Wallet
+==================
+Mnemonic:      usage day elder father extend arm organ congress trend cabin sight love
+Base HD Path:  m/44'/60'/0'/0/{account_index}
+
+Default Gas Price
+==================
+1000000000
+
+BlockGas Limit
+==================
+30000000
+
+Call Gas Limit
+==================
+50000000
+
+Chain
+==================
+Hardfork: shanghai
+Id:       1337
+
+RPC Listening on 127.0.0.1:8545
+eth_chainId
+eth_accounts
+eth_getBalance
+eth_gasPrice
+eth_estimateGas
+eth_getTransactionCount
+eth_chainId
+net_version
+eth_blockNumber
+eth_sendRawTransaction
+
+  Transaction: 0x27eed76fc93e045ad4a4a0592d367990c947a97bb37fcfa1db06c58d2a0d434b
+  Contract created: 0x65200e182575c73549a93ad16da6b62457271a0a
+  Gas usage: 2913762
+  Block number: 1
+  Block time: Wed Jul 31 2024 12:51:52 GMT+1000 (Australian Eastern Standard Time)
+
+eth_getTransactionReceipt
+eth_blockNumber
+
+//deploy
+$ node build/deploy.js deploy manager MilkSupplyChain
+Connected to Web3 provider.
+Promise { <pending> }
+Accessing account: manager
+Writing:  @openzeppelin/contracts/access/AccessControl.json to /mnt/c/Users/dyxinyang/desktop/comp6452/p2/build
+Writing:  @openzeppelin/contracts/access/IAccessControl.json to /mnt/c/Users/dyxinyang/desktop/comp6452/p2/build
+Writing:  @openzeppelin/contracts/utils/Context.json to /mnt/c/Users/dyxinyang/desktop/comp6452/p2/build
+Writing:  @openzeppelin/contracts/utils/introspection/ERC165.json to /mnt/c/Users/dyxinyang/desktop/comp6452/p2/build
+Writing:  @openzeppelin/contracts/utils/introspection/IERC165.json to /mnt/c/Users/dyxinyang/desktop/comp6452/p2/build
+Writing:  MilkSupplyChain.json to /mnt/c/Users/dyxinyang/desktop/comp6452/p2/build
+Contract compiled
+gas price: 0x3b9aca00
+gas:  29137620
+Contract contract deployed at address: 0x65200E182575C73549a93AD16Da6b62457271A0a
+
+//add ...
+$ node build/deploy.js addFarmer MilkSupplyChain 0x65200E182575C73549a93AD16Da6b62457271A0a 0xdDd09c749D765E996043060f94E754F9e4eBd5a4
+Connected to Web3 provider.
+add farmer: 0xdDd09c749D765E996043060f94E754F9e4eBd5a4
+^C
+$ node build/deploy.js addTransporter MilkSupplyChain 0x65200E182575C73549a93AD16Da6b62457271A0a 0x84c8aa581e2f92eA539242A2700d0eFf7f412fE1
+Connected to Web3 provider.
+add transporter: 0x84c8aa581e2f92eA539242A2700d0eFf7f412fE1
+^C
+$ node build/deploy.js addInspector MilkSupplyChain 0x65200E182575C73549a93AD16Da6b62457271A0a 0xd6ed99eF47459477c1AC5C85B41F5f42703B0840
+Connected to Web3 provider.
+add farmer: 0xd6ed99eF47459477c1AC5C85B41F5f42703B0840
+^C
+$ node build/deploy.js addRetailer MilkSupplyChain 0x65200E182575C73549a93AD16Da6b62457271A0a 0xF187832325B01592AE62A4aB347396f7D92029bE
+Connected to Web3 provider.
+add farmer: 0xF187832325B01592AE62A4aB347396f7D92029bE
